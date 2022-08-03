@@ -5,12 +5,16 @@ export const Statistics = ({ title, stats }) => {
     return <section className="statistics">        
         {title && <h2 className="title">{ title }</h2>}
         <ul className="stat-list">
-            <StatisticsList stats={stats}/>
+            {stats.map(item => {
+                return (<StatisticsList key={item.id} label={item.label} percentage={item.percentage} />)
+            })}
         </ul>
     </section>
 }
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id:PropTypes.string.isRequired,
+    })).isRequired,
 }
