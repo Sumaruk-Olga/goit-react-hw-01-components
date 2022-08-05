@@ -9,9 +9,11 @@ export const Friend = styled.li`
     flex-direction: row;   
     align-items: center;
     padding-bottom: ${ p => p.theme.space[2] }px;
-    padding-top: ${ p => p.theme.space[2] }px;;
+    padding-top: ${ p => p.theme.space[2] }px;
+    box-shadow: ${p => p.theme.shadow};
     &:not(:last-child){        
         border-bottom: 1px solid ${ p => p.theme.text.primary };
+        margin-bottom: ${p=>p.theme.space[2]}px;
     }
 `;
 

@@ -1,13 +1,19 @@
 import styled from "@emotion/styled";
 
 export const Paper = styled.div`
-    width: 50%;    
+    width: 100%;    
     margin-left: auto;
     margin-right: auto;
     margin-bottom:${p => p.theme.space[4]}px;
     border-radius: ${p => p.theme.radii.normal};
     box-shadow: ${p => p.theme.shadow};
     background-color: ${p => p.theme.colors.page};
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 25%;
+  }
 `;
 
 export const Description = styled.div`

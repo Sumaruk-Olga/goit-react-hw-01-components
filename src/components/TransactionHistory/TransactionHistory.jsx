@@ -1,25 +1,31 @@
 import PropTypes, { arrayOf, shape } from 'prop-types';
-import { Transaction } from "components/Transaction/Transaction"
+import { Transaction } from "components/Transaction/Transaction";
+import { Table, Thead, Tr, Th, Tbody } from 'components/TransactionHistory/TransactionHistory.styled';
+import { Paper } from 'components/Statistics/Statistics.styled';
+import { NameOfTask } from 'components/HomeworkTitle/HomeworkTitle.styled';
 
 export const TransactionHistory = ({ items }) => {
-    return <table className="transaction-history">
-    <thead>
-        <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
-        </tr>
-    </thead>
+    return (<Paper>
+    <NameOfTask>Transaction History</NameOfTask>
+        <Table>        
+    <Thead>            
+        <Tr>
+        <Th>Type</Th>
+        <Th>Amount</Th>
+        <Th>Currency</Th>
+        </Tr>
+    </Thead>
 
-    <tbody>
+    <Tbody>
         {items.map(({id, type, amount, currency}) => <Transaction
             key={id}
             type={type}
             amount={amount}
             currency={currency} />)
         }  
-    </tbody>
-</table>
+    </Tbody>
+        </Table>
+        </Paper>)
 }
 
 TransactionHistory.propTypes = {
