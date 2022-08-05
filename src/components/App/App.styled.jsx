@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+// import normalize
 
 export const Container = styled.div`    
     display: 'flex';
@@ -6,6 +7,6 @@ export const Container = styled.div`
     flex-direction: 'column';    
     font-size: ${p => p.theme.fontSizes.m};
     color: ${p => p.theme.text.primary};
-    background-color: ${p => p.theme.colors.primary};    
+    background-color: ${p => p.theme.colors.primary};  
 `;
 
