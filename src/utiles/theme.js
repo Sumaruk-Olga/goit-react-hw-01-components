@@ -18,5 +18,9 @@ export const theme = {
         circle: '50%',
     },
     shadow: '10px 5px 5px #9342f5',
-    space: [0, 2, 4, 8, 16],
+    space: [0, 2, 4, 8, 16, 32],
+    status: {
+        online: '#12992d',
+        offline:'#bd132a',
+    }
 }

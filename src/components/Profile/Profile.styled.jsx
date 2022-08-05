@@ -1,15 +1,5 @@
 import styled from "@emotion/styled";
 
-export const Title = styled.h2`
-    display: block;
-    text-align: center;    
-    background-color: ${p => p.theme.colors.secondary};
-    border-top-left-radius: ${p => p.theme.radii.normal};
-    border-top-right-radius: ${p => p.theme.radii.normal};
-    margin-bottom: ${p => p.theme.space[3]}px;
-    margin-top: ${p => p.theme.space[3]}px;
-`
-
 export const Paper = styled.div`
     width: 50%;    
     margin-left: auto;

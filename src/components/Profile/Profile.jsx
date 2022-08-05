@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import {Title, Paper, Description, Avatar, Name, Tag, Location, Stats, StatsItem, Label, Quantity } from 'components/Profile/Profile.styled';
-
+import {Paper, Description, Avatar, Name, Tag, Location, Stats, StatsItem, Label, Quantity } from 'components/Profile/Profile.styled';
+import { NameOfTask } from 'components/HomeworkTitle/HomeworkTitle.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   
   return (    
 <Paper>
-  <Title>Social network profile</Title>
+  <NameOfTask>Social network profile</NameOfTask>
   <Description>
     <Avatar src={ avatar } alt="User avatar" />
         <Name>{ username }</Name>
