@@ -7,10 +7,12 @@ import data from '../../data/data.json';
 import friends from '../../data/friends.json';
 import transactions from '../../data/transactions.json';
 import { Container } from './App.styled';
+import { HomeworkTitle } from 'components/HomeworkTitle/HomeworkTitle.styled';
 
 export const App = () => {
   return (
     <Container>
+      <HomeworkTitle>homework 1</HomeworkTitle>
       <Profile
         username={user.username}
         tag={user.tag}

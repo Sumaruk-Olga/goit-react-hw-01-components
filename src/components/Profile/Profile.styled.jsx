@@ -7,15 +7,17 @@ export const Title = styled.h2`
     border-top-left-radius: ${p => p.theme.radii.normal};
     border-top-right-radius: ${p => p.theme.radii.normal};
     margin-bottom: ${p => p.theme.space[3]}px;
+    margin-top: ${p => p.theme.space[3]}px;
 `
 
 export const Paper = styled.div`
-    width: 50%;
-    background-color: ${p => p.theme.colors.page};
+    width: 50%;    
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:${p => p.theme.space[4]}px;
     border-radius: ${p => p.theme.radii.normal};
     box-shadow: ${p => p.theme.shadow};
+    background-color: ${p => p.theme.colors.page};
 `;
 
 export const Description = styled.div`
@@ -71,7 +73,7 @@ export const StatsItem = styled.li`
 `;
 
 export const Label = styled.span`
-    color: ${p => p.theme.text.secondary};
+    color: ${p => p.theme.text.primary};
     font-weight:normal;
 `;
 
